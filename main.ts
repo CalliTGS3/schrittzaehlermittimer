@@ -1,12 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(Schrittzahl)
 })
-function startNummer () {
-    basic.showString("#18")
-    basic.pause(500)
-    basic.clearScreen()
-    basic.pause(200)
-}
 input.onButtonPressed(Button.AB, function () {
     if (starten) {
         starten = false
@@ -22,7 +16,6 @@ let Schrittzahl = 0
 let starten = false
 starten = false
 Schrittzahl = 0
-startNummer()
 basic.showLeds(`
     . . . . .
     . . . . .
